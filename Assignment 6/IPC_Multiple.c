@@ -5,7 +5,6 @@
 #include <stdio.h>
 #include <string.h>
 #include <fcntl.h>
-#include <sys/ipc.h>
 #define DATASIZE 64
 int main() {
 	mkfifo("./myfifo1", 0666|IPC_CREAT);
